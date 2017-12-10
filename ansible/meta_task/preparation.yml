@@ -1,6 +1,9 @@
 ---
-# create devops and configure wheel via sudoers without password
+# Create devops and configure wheel via sudoers without password
 - import_tasks: ../tasks/create-devops-user-sudo.yml
+
+# Enable all repos used in the Foreman installation
+- import_tasks: ../tasks/prep_repos.yml
 
 
 # vim:sw=2:ts=2:et:
