@@ -33,4 +33,9 @@
     tags:
       - prereq_optional
 
+  - name: Importing CentOS GPG Key
+    rpm_key:
+      state: present
+      key: http://mirror.oss.ou.edu/centos/RPM-GPG-KEY-CentOS-7
+
 # vim:sw=2:ts=2:et:
